@@ -17,7 +17,8 @@ html, body{
 }
 
 h3{
-    color: #262626;
+    text-align: center;
+    color: #fff;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
@@ -26,8 +27,9 @@ h3{
 }
 
 p{
+    text-align: justify;
     font-size: 14px;
-    color: #666;
+    color: #fff;
     line-height: 20px;
     font-weight: 400;
     transition: 0.8s ease-in-out;
@@ -40,7 +42,7 @@ p{
     width: 32px;
     height: 32px;
     overflow: hidden;
-    background: #5727cd;
+    background: #fff;
     border-radius: 0 4px 0 32px;
     display: flex;
     justify-content: center;
@@ -50,7 +52,7 @@ p{
 .go_arrow{
     margin-top: -4px;
     margin-right: -4px;
-    color: #fff;
+    color: #000;
     font-family: courier, sans;
 }
 
@@ -58,8 +60,8 @@ p{
     display: block;
     position: relative;
     max-width: 262px;
-    background: #fff;
-    border-radius: 4px;
+    background: #525252;
+    border-radius: 8px;
     padding: 32px 24px;
     margin: 12px;
     text-decoration: none;
@@ -74,7 +76,7 @@ p{
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #5727cd;
+    background: #fff;
     width: 32px;
     height: 32px;
     border-radius: 32px;
@@ -83,14 +85,21 @@ p{
     transition: transform 0.8s ease-in-out;
 }
 
+
+
+.card img{
+    margin-left: 25%;
+    width: 50%;
+}
+
 .card:hover:before{
     transform: scale(30);
 }
 
 .card:hover p{
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .card:hover h3{
-    color: #fff;
+    color: #000;
 }
