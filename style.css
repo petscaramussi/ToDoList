@@ -15,19 +15,28 @@ html, body{
     align-items: center;
     flex-wrap: wrap;
 }
+ 
+.container2{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 h3{
     text-align: center;
     color: #fff;
     font-size: 17px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 4px;
     transition: 0.8s ease-in-out;
 }
 
 p{
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
     color: #fff;
     line-height: 20px;
@@ -82,9 +91,22 @@ p{
     border-radius: 32px;
     transform: scale(1);
     transform-origin: 50% 50%;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
+.card2{
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background: #525252;
+    border-radius: 8px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(38, 38, 38, 0.2);
+}
 
 
 .card img{
@@ -102,4 +124,25 @@ p{
 
 .card:hover h3{
     color: #000;
+}
+
+.sec{
+    background-color: gray;
+}
+
+.img{
+    border-radius: 4px;
+    margin-left: 45px;
+}
+
+#sobre{
+    text-align: center;
+    color: white;
+}
+
+#integrantes{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    opacity: 0.7;
 }
