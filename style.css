@@ -7,6 +7,10 @@ html, body{
     height: 100%;
 }
 
+footer{
+    height: 100px;
+}
+
 .container{
     width: 100%;
     height: 100%;
@@ -18,7 +22,7 @@ html, body{
  
 .container2{
     width: 100%;
-    height: 75%;
+    height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +34,9 @@ h3{
     color: #fff;
     font-size: 17px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 4px;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 p{
@@ -41,7 +45,7 @@ p{
     color: #fff;
     line-height: 20px;
     font-weight: 400;
-    transition: 0.8s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .go_corner{
@@ -108,7 +112,6 @@ p{
     box-shadow: 0 4px 8px rgba(38, 38, 38, 0.2);
 }
 
-
 .card img{
     margin-left: 25%;
     width: 50%;
@@ -128,6 +131,7 @@ p{
 
 .sec{
     background-color: gray;
+    height: 130%;
 }
 
 .img{
@@ -145,4 +149,97 @@ p{
     font-size: 100px;
     color: white;
     opacity: 0.7;
+}
+
+h4{
+    text-align: center;
+    color: #08298A;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.card:hover h4{
+    color: #585858;
+    transition: 0.4s;
+}
+
+#subirTopo {
+    text-decoration: none;
+    background: rgba(30,156,161,.9);
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    font-family: sans-serif;
+    opacity: .6;
+    border-radius: 150px;
+    }
+    
+    #subirTopo:hover {
+    opacity:1;
+    }
+
+#html{
+    color: #fff;
+    opacity: 0.7;
+    margin-left: 150px;
+    font-size: 100px;
+}
+
+#langs{
+    color: #fff;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 30px;
+    line-height: 60px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+#como{
+    color: #fff;
+    opacity: 0.7;
+    margin-left: 150px;
+    font-size: 60px;
+}
+
+#css{
+    color: #fff;
+    opacity: 0.7;
+    margin-left: 150px;
+    font-size: 100px;
+}
+
+#php{
+    color: #fff;
+    opacity: 0.7;
+    margin-left: 150px;
+    font-size: 100px;
+}
+
+#sql{
+    color: #fff;
+    opacity: 0.7;
+    margin-left: 150px;
+    font-size: 100px;
+}
+
+#inicio{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    opacity: 0.7;
+}
+
+.bar{
+    background: linear-gradient(to right, #191919, rgba(30,156,161,.9), #191919);
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+    z-index: 150;
 }
