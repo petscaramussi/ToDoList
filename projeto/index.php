@@ -12,12 +12,6 @@ if(isset($_SESSION['usuario'])){
     <title>Project</title>
 </head>
 <body>
-    <div class="logo">
-    <img src="css/logo2.png" >
-    </div>
-    <div class="name">
-    <h1><b>Amount</b> Control</h1>
-    </div>
     <form class="box" action="login.php" method="POST" autocomplete="off">
         <h3>LOGIN</h3>
         <input name="usuario" type="text" placeholder="Usuario">
