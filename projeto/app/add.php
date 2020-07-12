@@ -9,8 +9,8 @@ if(isset($_POST['title'])){
     if(empty($title)){
         header("Location: ../painel.php?mess=error");
     }else {
-        $stmt = $conn->prepare("INSERT INTO todos (idUsuario) VALUES (?)");
-		$res = $stmt->execute([$id]);
+    $stmt = $conn->prepare("INSERT INTO todos(title,idUsuario) VALUES('{$title}',{$id})");
+	$res = $stmt->execute();
         if($res){
             header("Location: ../painel.php?mess=success"); 
         }else {
@@ -20,5 +20,5 @@ if(isset($_POST['title'])){
         exit();
     }
 }else {
-    header("Location: ../index.php?mess=error");
+    header("Location: ../painel.php?mess=error");
 }
