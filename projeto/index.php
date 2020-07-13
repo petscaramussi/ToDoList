@@ -27,7 +27,7 @@ if(isset($_GET['status'])){
 
         <div class="txtb">
           <input name="senha" type="password">
-          <span data-placeholder="Password"></span>
+          <span data-placeholder="Senha"></span>
         </div>
 
         <input type="submit" class="logbtn" value="Login">

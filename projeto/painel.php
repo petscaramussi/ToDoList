@@ -12,15 +12,37 @@ $nome_usuario = $_SESSION['nome'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
+<body style="background-color: 	#2c2f33;">
 
 <div class="hello">
-	<h2>Ola, <?php echo $nome_usuario; ?> </h2>
+	<h2 style="color: #fff;
+    background-color: #23272a;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10%;
+    padding-top: 1%;
+    ">Ola, <?php echo $nome_usuario; ?> </h2>
     </div>
+
     <!--<p class="id_usuario">ID do usuario: <?php //echo $id_usuario; ?> </p> -->
-	<h2><a href="logout.php">Sair</a></h2>
+
+	<button style="position: absolute;
+    top: 1%;
+    left: 90%;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 4px;
+    background-color: #2c2f33;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    "><a href="logout.php" style="text-decoration: none; color: #fff;">Sair</a></button>
 
     <div class="main-section">
        <div class="add-section">
@@ -36,7 +58,7 @@ $nome_usuario = $_SESSION['nome'];
              <?php }else{ ?>
               <input type="text" 
                      name="title" 
-                     placeholder="What do you need to do?" />
+                     placeholder="O que você precisa fazer?" />
 			  <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>"/>
               <button type="submit">Add &nbsp; <span>&#43;</span></button>
              <?php } ?>
