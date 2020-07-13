@@ -2,7 +2,7 @@
 
 //tratamento para usuario ou senha invalido
 if(isset($_SESSION['nao_autenticado'])):
-        echo"<p style='color:red'> Erro, usuario ou senha invalido</p>";
+        echo"<p style='color:white; background-color: red; text-align: center;'> Erro, usuario ou senha invalido</p>";
     endif;
     unset($_SESSION['nao_autenticado']);
 
