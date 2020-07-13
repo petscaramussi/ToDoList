@@ -1,11 +1,16 @@
 body {
-    background: #34495e;
+    background: #2c2f33;
   }
   
   * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+  }
+
+  .hello{
+    background-color: #23272a;
+    color: #fff;
   }
   
   .main-section {

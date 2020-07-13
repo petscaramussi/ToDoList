@@ -5,6 +5,10 @@ if(isset($_SESSION['usuario'])){
     header('location: painel.php');
     exit();
 }
+
+if(isset($_GET['status'])){
+  echo"<p id='msg-success' style='color:white; background-color: green; text-align: center;'>Registrado com sucesso! </p>";
+}
 ?>
 <html>
 <head>
@@ -33,8 +37,14 @@ if(isset($_SESSION['usuario'])){
         </div>
 
       </form>
+      
 
       <script type="text/javascript">
+      //remover a msg apos um tempo
+      setTimeout(function(){ 
+                $('#msg-success').remove();   
+            }, 4000);
+
       $(".txtb input").on("focus",function(){
         $(this).addClass("focus");
       });

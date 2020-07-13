@@ -12,12 +12,16 @@ $nome_usuario = $_SESSION['nome'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
-	<h2>Ola, <?php echo $nome_usuario; ?> </h2>
-	<h2><a href="logout.php">Sair</a></h2>
-	<p class="id_usuario">ID do usuario:  <?php echo $id_usuario; ?> </p> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<div class="hello">
+	<h2>Ola, <?php echo $nome_usuario; ?> </h2>
+    </div>
+    <!--<p class="id_usuario">ID do usuario: <?php //echo $id_usuario; ?> </p> -->
+	<h2><a href="logout.php">Sair</a></h2>
+
     <div class="main-section">
        <div class="add-section">
           <form action="app/add.php" method="POST" autocomplete="off">
